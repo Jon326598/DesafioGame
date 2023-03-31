@@ -64,9 +64,8 @@
 }
 
 .clouds2{
-    width: 600px;
+    width: 700px;
     z-index: 1;
-    
 }
 
 @keyframes pipe-animation {
