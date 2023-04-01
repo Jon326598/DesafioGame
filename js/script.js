@@ -3,6 +3,9 @@ const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
 const moita = document.querySelector('.moita');
 const fimdejogo = document.querySelector('.clouds2');
+const score = document.querySelector(".score");
+let count = 0;
+
 
 const jump = () => {
     mario.classList.add("jump");
@@ -10,7 +13,8 @@ const jump = () => {
     setTimeout(()=>{
     mario.classList.remove('jump');
      },500);
-}       
+
+}   
 
 const loop = setInterval(() =>{
 
@@ -47,6 +51,11 @@ const loop = setInterval(() =>{
 
     }
 
+    count++;
+  score.innerHTML =  `${ count}`;
+
+
 }, 10);
+
 
     document.addEventListener('keydown', jump);
